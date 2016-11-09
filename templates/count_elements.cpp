@@ -22,11 +22,11 @@
 int main( int argc, char *argv[] )
 {
 	const char c_string[] = "Hello, world!";
-    const int c_integers[] = { 0, 1, 2, 3, 2, 7, 123, 2 };
+	const int c_integers[] = { 0, 1, 2, 3, 2, 7, 123, 2 };
 
 	assert( 2 == experimental::count_elements( c_string, 'o' ) );
-    assert( 1 == experimental::count_elements( c_string, 'H' ) );
-    assert( 0 == experimental::count_elements( c_string, 'z' ) );
+	assert( 1 == experimental::count_elements( c_string, 'H' ) );
+	assert( 0 == experimental::count_elements( c_string, 'z' ) );
 
 	assert( 3 == experimental::count_elements( c_integers, 2 ) );
 	assert( 1 == experimental::count_elements( c_integers, 123 ) );
